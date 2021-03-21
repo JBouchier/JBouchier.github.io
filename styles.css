@@ -1,4 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+#img-cont {
+  background: rgba(0, 0, 0, 0.658);
+  position: fixed;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space;
+}
+
+#img-cont button {
+  min-width: 6rem;
+  min-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+#viewer {
+  height: 90vh;
+}
+
+#img-display {
+  max-width: 1920px;
+  margin: auto;
+  position: static;
+  z-index: 1;
+}
+
 * {
   margin: 0;
 }
@@ -21,12 +49,29 @@
   background-color: #969696;
 }
 
+.flexed {
+  display: flex;
+  justify-content: center;
+}
+
+.flexed div {
+  text-align: center;
+}
+
+.flexed h3,
+.flexed p {
+  margin: 1rem;
+}
+
 body {
+  background: #eef1f4;
+  color: #323334;
+}
+
+#body {
   padding: 1.5rem 1rem;
   font-family: "Open Sans", sans-serif;
   line-height: 1.4;
-  background: #eef1f4;
-  color: #323334;
   max-width: 1920px;
   min-height: calc(100vh - 3rem);
   margin: auto;
@@ -34,85 +79,71 @@ body {
   align-items: center;
 }
 
-body main {
+#body main {
   display: grid;
   grid-template-columns: repeat(auto-fill, 40rem);
   justify-content: center;
   overflow: hidden;
 }
 
-body main header,
-body main footer {
+#body main header,
+#body main footer {
   grid-column: 1 / -1;
 }
 
-body main header:not(footer),
-body main footer:not(footer) {
+#body main header:not(footer),
+#body main footer:not(footer) {
   border-bottom: 1px solid #999;
   padding-bottom: 0.5rem;
 }
 
-body main article {
+#body main article {
   display: grid;
   border-bottom: 1px solid #999;
   padding: 1rem 0;
   padding-right: 3rem;
 }
 
-body main article .flexed {
-  display: flex;
-  justify-content: center;
-}
-
-body main article .flexed div {
-  text-align: center;
-}
-
-body main article .flexed h3,
-body main article .flexed p {
-  margin: 1rem;
-}
-
-body main article h2 {
+#body main article h2 {
   margin-bottom: 0.5rem;
 }
 
-body main article p {
+#body main article p {
   margin-bottom: 1rem;
 }
 
-body main article p:last-of-type {
+#body main article p:last-of-type {
   margin-bottom: 0;
 }
 
-body main article img {
-  width: clamp(20vh, 100%, 10rem);
+#body main article img {
+  width: clamp(20vh, 100%, 20rem);
 }
 
 @media (max-width: 120rem) {
-  body main article:nth-of-type(2n) {
+  #body main article:nth-of-type(2n) {
     padding-right: 0rem;
   }
 }
 
 @media (max-width: 160rem) {
-  body main article:nth-of-type(3n) {
+  #body main article:nth-of-type(3n) {
     padding-right: 0rem;
   }
 }
 
-body main footer {
+#body main footer {
   padding-top: 1rem;
   text-align: center;
 }
 
 @media (max-width: 83rem) {
-  body main {
+  #body main {
     max-width: 60rem;
     margin: auto;
     grid-template-columns: 1fr;
   }
-  body main article {
+  #body main article {
     padding-right: 1rem;
   }
 }

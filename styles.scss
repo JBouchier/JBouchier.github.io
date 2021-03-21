@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
+#img-cont {
+  background: rgba(0, 0, 0, 0.658);
+  position: fixed; margin:0; height: 100vh; width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space;
+  button {
+    min-width: 6rem;
+    min-height: 2rem;
+    margin-bottom: 10rem;
+  }
+}
+
+#img-display{
+  max-width: 1920px;
+  margin: auto;
+  position: static;
+  z-index: 1;
+}
+
 * {
   margin: 0;
 
@@ -22,12 +42,27 @@
   }
 }
 
+.flexed {
+  display: flex;
+  justify-content: center;
+  div {
+    text-align: center;
+  }
+  h3,
+  p {
+    margin: 1rem;
+  }
+}
+
 body {
+  background: #eef1f4;
+  color: #323334;
+}
+
+#body {
   padding: 1.5rem 1rem;
   font-family: "Open Sans", sans-serif;
   line-height: 1.4;
-  background: #eef1f4;
-  color: #323334;
   max-width: 1920px;
   min-height: calc(100vh - 3rem);
   margin: auto;
@@ -61,18 +96,6 @@ body {
       padding: 1rem 0;
       padding-right: 3rem;
 
-      .flexed {
-        display: flex;
-        justify-content: center;
-        div {
-          text-align: center;
-        }
-        h3,
-        p {
-          margin: 1rem;
-        }
-      }
-
       h2 {
         margin-bottom: 0.5rem;
       }
@@ -86,7 +109,7 @@ body {
       }
 
       img {
-        width: clamp(20vh, 100%, 10rem);
+        width: clamp(20vh, 100%, 20rem);
       }
 
       @media (max-width: 120rem) {
