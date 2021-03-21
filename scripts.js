@@ -11,8 +11,7 @@ function onImgClick(e) {
     var viewer = document.getElementById("viewer");
     var x = document.getElementById("img-cont");
     viewer.src = e.src;
-    if (x.style.visibility !== "hidden") {
-        return;
+    if (x.style.visibility !== "visible") {
+        x.style.visibility = "visible";
     }
-    x.style.visibility = "visible";
 }

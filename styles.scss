@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 #img-cont {
+  width: 100vh;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.658);
   position: fixed; margin:0; height: 100vh; width: 100%;
   flex-direction: column;
@@ -13,8 +15,11 @@
   }
 }
 
+#viewer {
+  max-width: 80%;
+  height: auto;
+}
 #img-display{
-  max-width: 1920px;
   margin: auto;
   position: static;
   z-index: 1;
