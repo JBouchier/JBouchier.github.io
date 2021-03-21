@@ -40,6 +40,11 @@ body {
     justify-content: center;
     overflow: hidden;
 
+    > * {
+      // for debug
+      // border: 1px dotted hotpink;
+    }
+
     header,
     footer {
       grid-column: 1 / -1;
@@ -59,7 +64,6 @@ body {
       .flexed {
         display: flex;
         justify-content: center;
-        width: 100%;
         div {
           text-align: center;
         }

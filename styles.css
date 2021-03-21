@@ -62,7 +62,6 @@ body main article {
 body main article .flexed {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 body main article .flexed div {
