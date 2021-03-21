@@ -19,6 +19,11 @@
   margin-bottom: 10rem;
 }
 
+.ref {
+  color: #616161;
+  font-size: 10pt;
+}
+
 #viewer {
   max-width: 80%;
   height: auto;
